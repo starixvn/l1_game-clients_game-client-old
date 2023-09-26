@@ -65,7 +65,7 @@ export default class SocketIOTableGameBase extends WebSocketTableGameBase {
         if (!this.isAlive()) {
             return;
         }
-        this.currentMiniPanel.onGeneralData(data);
+        this.currentMiniPanel && this.currentMiniPanel.onGeneralData(data);
         this.onDataGameRoomGeneral(data);
     }
 
@@ -75,7 +75,7 @@ export default class SocketIOTableGameBase extends WebSocketTableGameBase {
         }
         this.onDataGameRoomGeneral(data);
         super.onDataGameRoom(data);
-        !data.notice && this.currentMiniPanel.onGeneralData(data);
+        !data.notice && this.currentMiniPanel && this.currentMiniPanel.onGeneralData(data);
     }
 
     onBetItemClick(event) {

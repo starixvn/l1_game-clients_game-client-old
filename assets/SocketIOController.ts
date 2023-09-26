@@ -277,6 +277,10 @@ export default class SocketIOController {
                 onConnectCallback(socket);
             } else {
                 const session = getSession();
+                if(!session.ss && session.session){
+                    session.ss = session.session;
+                }
+                
                 session.ss && socket.emit("signin", session);
             }
         });

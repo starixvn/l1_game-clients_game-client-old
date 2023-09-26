@@ -14,6 +14,7 @@ export interface Session {
     username: string;
     language: string;
     ss: string;
+    session: string;
     time: Date;
     isAuthenticated: boolean;
     system: number;

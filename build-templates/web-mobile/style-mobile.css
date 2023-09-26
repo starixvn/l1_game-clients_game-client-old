@@ -44,7 +44,8 @@ body {
     padding: 0;
     border: 0;
     margin: 0;
-    background: url(./background.jpg);
+    /*background: url(./background.jpg);*/
+    background-color: transparent !important;
     background-size: auto 100vh;
 
     cursor: default;
@@ -183,7 +184,8 @@ p.footer {
 .splash {
     position: relative;
     top: 36.25vh;
-    background: url(./logo_saba.png) no-repeat center;
+    /*background: url(./logo_saba.png) no-repeat center;*/
+    background-color: transparent;
     background-size: auto 17.81vh;
     width: auto;
     height: 17.81vh;

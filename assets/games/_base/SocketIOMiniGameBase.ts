@@ -87,7 +87,7 @@ export default class SocketIOMiniGameBase extends GameBase {
             }
         }
 
-        !data.notice && this.currentMiniPanel.onGeneralData(data);
+        !data.notice && this.currentMiniPanel && this.currentMiniPanel.onGeneralData(data);
     }
 
     static adjustPosition(betBoard: any, node: any) {
