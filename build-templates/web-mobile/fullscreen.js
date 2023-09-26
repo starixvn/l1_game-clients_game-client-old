@@ -345,13 +345,19 @@ function updateSplashLogo() {
     splashText.className = `splash_text${suffix}`;
 }
 
-var mode = (new URLSearchParams(window.location.search)).get('mode');
-if(mode !== "minigame"){
-    document.body.style.setProperty('background-color', 'black', 'important');
-}        
+     
 
 updateSplashLogo();
 updateLocalizedImages();
 initGameEngine();
 initGA();
 addGATrackingButton();
+var mode = (new URLSearchParams(window.location.search)).get('mode');
+console.log("mode", mode);
+if(mode !== "minigame"){    
+    setTimeout(() => {
+        console.log("update body");
+        document.body.style.setProperty('background-color', 'black', 'important');
+    }, 2000)
+    
+}   
