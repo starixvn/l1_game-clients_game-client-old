@@ -149,6 +149,11 @@ function initGA() {
         for (let i = 0; i < bundleRoot.length; i++) {
             cc.assetManager.loadBundle("assets/" + bundleRoot[i], cb);
         }
+
+        var mode = (new URLSearchParams(window.location.search)).get('mode');
+        if(mode !== "minigame"){
+            document.body.style.setProperty('background-color', 'black', 'important');
+        }        
     }
 })();
 initGA();

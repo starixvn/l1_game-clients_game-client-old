@@ -345,6 +345,11 @@ function updateSplashLogo() {
     splashText.className = `splash_text${suffix}`;
 }
 
+var mode = (new URLSearchParams(window.location.search)).get('mode');
+if(mode !== "minigame"){
+    document.body.style.setProperty('background-color', 'black', 'important');
+}        
+
 updateSplashLogo();
 updateLocalizedImages();
 initGameEngine();

@@ -1,7 +1,7 @@
 body {
     cursor: default;
     color: #888;
-    background-color: #333;
+    background-color: transparent;
 
     display: -webkit-flex;
     display: flex;
