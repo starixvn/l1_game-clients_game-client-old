@@ -49,15 +49,18 @@ export default class SocketIOMiniGameBase extends GameBase {
         this.sendSocketData("inGame", null);
     }
 
-    closeGame() {
+    closeGame() {        
         if (!this.isAlive()) {
             return;
         }
+
+        console.log("close game");
+        window.parent.postMessage("close-game","*")
         this.sendRetryMessage();
         this.socketIOController.closeSocket(this.gameId);
         this.showProcessingWarning(false);
         super.closeGame();
-        this.currentMiniPanel.onGamesLayerChanged();
+        this.currentMiniPanel && this.currentMiniPanel.onGamesLayerChanged();
     }
 
     onData(data) {

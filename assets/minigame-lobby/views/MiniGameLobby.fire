@@ -212,10 +212,10 @@
     "_clearFlags": 7,
     "_backgroundColor": {
       "__type__": "cc.Color",
-      "r": 7,
-      "g": 5,
-      "b": 5,
-      "a": 164
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
     },
     "_depth": -0.1,
     "_zoomRatio": 1,

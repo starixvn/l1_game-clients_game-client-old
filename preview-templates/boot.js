@@ -154,6 +154,8 @@ function initGA() {
         if(mode !== "minigame"){
             document.body.style.setProperty('background-color', 'black', 'important');
         }        
+
+        
     }
 })();
 initGA();
