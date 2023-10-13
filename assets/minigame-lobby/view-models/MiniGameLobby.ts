@@ -21,7 +21,7 @@ export default class MiniGameLobby extends cc.Component {
         this.openNewSocket(+gameId);
 
         setTimeout(() => {
-            document.getElementsByTagName("body")[0].style.backgroundImage = "url('./bg3.png')";
+            document.getElementsByTagName("body")[0].style.backgroundImage = "url('./bg3.acc40.png')";
         }, 2000);        
     }
 
