@@ -19,6 +19,10 @@ export default class MiniGameLobby extends cc.Component {
         const urlParams = new URLSearchParams(window.location.search);
         const gameId = urlParams.get("gameId");
         this.openNewSocket(+gameId);
+
+        setTimeout(() => {
+            document.getElementsByTagName("body")[0].style.backgroundImage = "url('./bg3.png')";
+        }, 2000);        
     }
 
     async openNewSocket(gameId) {

@@ -1,10 +1,12 @@
 body {
     cursor: default;
     color: #888;
-    background-image: url('./bg3.png');
-    background-size: 50% 50%;
+    /*background-image: url('./bg3.png');*/
+    background-image: none;
+    
+    background-size: 82% 98%;
     background-repeat: no-repeat;
-    background-position: 95px 120px;
+    background-position: 55px -8px;    
     
     display: -webkit-flex;
     display: flex;
