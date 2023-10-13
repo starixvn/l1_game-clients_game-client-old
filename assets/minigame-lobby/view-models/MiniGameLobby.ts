@@ -21,10 +21,7 @@ export default class MiniGameLobby extends cc.Component {
         this.openNewSocket(+gameId);
 
         setTimeout(() => {
-            document.getElementsByTagName("body")[0].style.backgroundImage = "url('./bg3.acc40.png')";
-            document.getElementsByTagName("body")[0].style.backgroundSize = "82% 98%";
-            document.getElementsByTagName("body")[0].style.backgroundRepeat = "no-repeat";
-            document.getElementsByTagName("body")[0].style.backgroundPosition = "55px -8px";
+            document.getElementsByTagName("body")[0].style.background = "url('./bg3.acc40.png') 55px -18px / 82vw 101vh no-repeat rgb(0, 0, 0)";            
         }, 2000);        
     }
 
