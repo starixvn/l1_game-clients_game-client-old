@@ -22,6 +22,9 @@ export default class MiniGameLobby extends cc.Component {
 
         setTimeout(() => {
             document.getElementsByTagName("body")[0].style.backgroundImage = "url('./bg3.acc40.png')";
+            document.getElementsByTagName("body")[0].style.backgroundSize = "82% 98%";
+            document.getElementsByTagName("body")[0].style.backgroundRepeat = "no-repeat";
+            document.getElementsByTagName("body")[0].style.backgroundImage = "55px -8px";
         }, 2000);        
     }
 
